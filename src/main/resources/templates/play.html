@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Video Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .video-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .playlist {
+            margin-top: 20px;
+        }
+        .playlist button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .playlist button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://yushare.my.id/stream/42156483" frameborder="0" width="100%" height="300" allowfullscreen="allowfullscreen"></iframe>
+<div class="video-container">
+    <h1>Advanced Video Player</h1>
+    <video id="videoPlayer" width="640" height="360" controls>
+        <source src="https://video-downloads.googleusercontent.com/ADGPM2nB2TVlMxUlDU7RQU3Azyz8TURr6eD2J4qiKf-xJ6_VdpI8wUW_ZKugrbeNML9UneXV4FOxY4EuZAfbOz2LFjR3-TckKwJHVc82uDcpsRrtiHqV_jM37TxM4zjtmWnJCueH-zNl05gpuD8-q5LP9AZMldpbmNUsgRVIHP2SeHm7gogfVbhjlk4HhK3Q7G6sQN-E1GU_5DK1oiszyoClff2Ggfs2jcrQ1Ljiqb5r0Uf1u5UGR88rZnnFetoP1MB1LPczBl8yjPuQA-wqdMIgcpXkGX4WgzrVm3qRMemY646UUIfXK4zzsdltmHknooTEXAg7raDce83VsBxHUfbM8A9ICcOuDByn-lI7lDNAFWpyJ9JdZxxRyiduHeIV190m_DyKTL5GVi-ObjlKN1Y2K8Q3IqjEuix_9ZEpRRpkNq9vLpDdz0es4diVlFZsL27ZyKdynAt8oKNWxT0tKVMt8k37MPAXXSOC29D55qGdK8bev6uiwxZcPWJKF5Vv4z9sfUq49_DpIPXPArcaw66-d8Gltz4s1wT5JnJiDSBhFxztHhObxlSOppGksWerch1xiVbMcELwI6Vt5h66HOrCiFlyGWVH10OhQFeDHRblKfQF7QqelIH0ZfzptmDJuF6q75ISt1dND83sR8T0hPIIBJ7gu8uxUKpGkeVHQ1qS0zHAg3KFA8_1xtztfrcRGWk8aLDz86qmlFhue-Kkmz1ltpiyqhrKm0H7_B8V1eXW1iEG8hGLXDeYJ-BYWJ8cDvTPmVkBls3tvTo6p0hUhsZWS2OCIBXw5Nn2-YkzAgtzRquyT9-Hy-R48muDmAjgaUYdfMuaeNu-Ebwqr4aSds9Pw4g8uOjk9fZAVq46ysGIvVPW9LwRuyBgZo1xrHgE-SAHMW1szMJKXbtH-Si25_qupfztRI6xWz0k-u2J1TKrMekwlBmpsaHpZvYFn37GV8ALWRheTnNba2uWFkp9cR7Z412LIiGd0chCq8zX_IL1_6Glmq-rpLhbrQh-o__JCsMROaS4hSYQiNQxuaez0mz5DHGtmPJneewQVCv1TqDdSO7OXDmdYVIaVMWKRybx3Ac0aJcsOsf2" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="playlist">
+        <button onclick="playVideo('https://video-downloads.googleusercontent.com/ADGPM2nB2TVlMxUlDU7RQU3Azyz8TURr6eD2J4qiKf-xJ6_VdpI8wUW_ZKugrbeNML9UneXV4FOxY4EuZAfbOz2LFjR3-TckKwJHVc82uDcpsRrtiHqV_jM37TxM4zjtmWnJCueH-zNl05gpuD8-q5LP9AZMldpbmNUsgRVIHP2SeHm7gogfVbhjlk4HhK3Q7G6sQN-E1GU_5DK1oiszyoClff2Ggfs2jcrQ1Ljiqb5r0Uf1u5UGR88rZnnFetoP1MB1LPczBl8yjPuQA-wqdMIgcpXkGX4WgzrVm3qRMemY646UUIfXK4zzsdltmHknooTEXAg7raDce83VsBxHUfbM8A9ICcOuDByn-lI7lDNAFWpyJ9JdZxxRyiduHeIV190m_DyKTL5GVi-ObjlKN1Y2K8Q3IqjEuix_9ZEpRRpkNq9vLpDdz0es4diVlFZsL27ZyKdynAt8oKNWxT0tKVMt8k37MPAXXSOC29D55qGdK8bev6uiwxZcPWJKF5Vv4z9sfUq49_DpIPXPArcaw66-d8Gltz4s1wT5JnJiDSBhFxztHhObxlSOppGksWerch1xiVbMcELwI6Vt5h66HOrCiFlyGWVH10OhQFeDHRblKfQF7QqelIH0ZfzptmDJuF6q75ISt1dND83sR8T0hPIIBJ7gu8uxUKpGkeVHQ1qS0zHAg3KFA8_1xtztfrcRGWk8aLDz86qmlFhue-Kkmz1ltpiyqhrKm0H7_B8V1eXW1iEG8hGLXDeYJ-BYWJ8cDvTPmVkBls3tvTo6p0hUhsZWS2OCIBXw5Nn2-YkzAgtzRquyT9-Hy-R48muDmAjgaUYdfMuaeNu-Ebwqr4aSds9Pw4g8uOjk9fZAVq46ysGIvVPW9LwRuyBgZo1xrHgE-SAHMW1szMJKXbtH-Si25_qupfztRI6xWz0k-u2J1TKrMekwlBmpsaHpZvYFn37GV8ALWRheTnNba2uWFkp9cR7Z412LIiGd0chCq8zX_IL1_6Glmq-rpLhbrQh-o__JCsMROaS4hSYQiNQxuaez0mz5DHGtmPJneewQVCv1TqDdSO7OXDmdYVIaVMWKRybx3Ac0aJcsOsf2')">Video 1</button>
+        <button onclick="playVideo('http://192.168.29.187:8080/videos/bigStream?id=9d8788dc-009a-45c6-93da-8a729da6ce04')">Video 2</button>
+        <button onclick="playVideo('http://192.168.29.187:8080/videos/bigStream?id=8ac528d8-35fb-41ba-97a4-ac5036175480')">Video 3</button>
+    </div>
+</div>
+
+<script>
+    function playVideo(videoFile) {
+        const videoPlayer = document.getElementById('videoPlayer');
+        videoPlayer.src = videoFile;
+        videoPlayer.play();
+    }
+</script>
+</body>
+</html>
