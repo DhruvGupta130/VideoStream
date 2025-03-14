@@ -1,7 +1,3 @@
-Looks pretty solid! Just polishing a few things for clarity and consistency — and fixing a little mismatch since the project uses Spring MVC and Thymeleaf, not React or Tailwind. Here’s the refined version:  
-
----
-
 # 🎥 VideoStream  
 
 VideoStream is a powerful web application designed for seamless video streaming over the internet. This project demonstrates expertise in full-stack development, encompassing video processing, streaming, and web technologies.  
